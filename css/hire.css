@@ -1,0 +1,199 @@
+:root {
+    --main-bg-color: #f2f2f2;
+    --header-bg-color: #333;
+    --header-text-color: #fff;
+    --nav-link-color: #fff;
+    --nav-link-hover-color: #ffd700;
+    --content-text-color: #333;
+    --project-bg-color: #fff;
+    --project-border-color: #ddd;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--content-text-color);
+    background-color: var(--content-text-color);
+    /* background-color: var(--header-text-color); */
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-bg-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--nav-link-hover-color);
+}
+
+.content {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.content h1 {
+    color: var(--header-text-color);
+    margin-bottom: 20px;
+}
+
+.hire-me-content {
+    text-align: left;
+}
+
+.hire-me-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+.hire-me-info {
+    flex: 1;
+    
+    width: 10%;
+}
+.hire-me-info h2{
+    color: var(--header-text-color);
+}
+.contact-form {
+    flex: 1;
+    max-width: 400px;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.contact-form label,
+.contact-form button {
+    width: 100%;
+    color: var(--main-bg-color);
+    resize: none;
+}
+
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    color: var(--header-bg-color);
+    resize: none;
+    font-size: larger;
+    font-weight: bold;
+}
+.contact-form button {
+    background-color:#181818;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.para {
+    text-align: justify;
+    color:var(--header-text-color);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+}
+
+.logospan {
+    color: var(--nav-link-hover-color);
+}
+.logospan2 {
+    color: var(--header-text-color);
+}
+.hspan{
+    color: var(--nav-link-hover-color);
+}
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: tracking-in-expand 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+.logoanc{
+    text-decoration: none;
+}
