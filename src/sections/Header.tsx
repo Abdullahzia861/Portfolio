@@ -82,7 +82,7 @@ export default function Header({ scrollY }: HeaderProps) {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-           <a href="/your-cv.pdf" download="/public/MYCV.pdf">
+           <a href="/MYCV.pdf" download="MYCV.pdf">
             <Button
               variant="outline"
               size="sm"
@@ -122,7 +122,7 @@ export default function Header({ scrollY }: HeaderProps) {
               {link.name}
             </button>
           ))}
-         <a href="/your-cv.pdf" download="/public/MYCV.pdf">  
+         <a href="/MYCV.pdf" download="MYCV.pdf">  
           <Button
             variant="outline"
             size="sm"
