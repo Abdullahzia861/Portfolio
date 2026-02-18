@@ -165,7 +165,7 @@ export default function Contact() {
                 <Download className="w-4 h-4 mr-2" />
                 Download CV
               </Button>
-             <a href="/MYCV.pdf" download="MYCV.pdf">  
+             </a>  
             </div>
           </div>
 
