@@ -82,6 +82,7 @@ export default function Header({ scrollY }: HeaderProps) {
 
           {/* CTA Button */}
           <div className="hidden md:block">
+           <a href="/your-cv.pdf" download="/public/MYCV.pdf">
             <Button
               variant="outline"
               size="sm"
@@ -90,6 +91,7 @@ export default function Header({ scrollY }: HeaderProps) {
               <Download className="w-4 h-4 mr-2" />
               CV
             </Button>
+           </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -120,6 +122,7 @@ export default function Header({ scrollY }: HeaderProps) {
               {link.name}
             </button>
           ))}
+         <a href="/your-cv.pdf" download="/public/MYCV.pdf">  
           <Button
             variant="outline"
             size="sm"
@@ -128,6 +131,7 @@ export default function Header({ scrollY }: HeaderProps) {
             <Download className="w-4 h-4 mr-2" />
             Download CV
           </Button>
+         </a>
         </nav>
       </div>
     </header>
