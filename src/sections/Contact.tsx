@@ -158,12 +158,14 @@ export default function Contact() {
               <p className="text-sm text-tokyo-text-secondary mb-4">
                 Get a comprehensive overview of my skills, experience, and qualifications.
               </p>
+             <a href="/MYCV.pdf" download="MYCV.pdf"> 
               <Button
                 className="bg-gradient-primary text-white hover:opacity-90 w-full"
               >
                 <Download className="w-4 h-4 mr-2" />
                 Download CV
               </Button>
+             <a href="/MYCV.pdf" download="MYCV.pdf">  
             </div>
           </div>
 
